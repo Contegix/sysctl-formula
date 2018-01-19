@@ -18,9 +18,10 @@
 {% set os_family_map = salt['grains.filter_by']({
         'Arch': {},
         'RedHat': {
+            "pkg": "procps",
             "config": {
                 "location": '/etc/sysctl.conf',
-            }
+            },
         },
         'Suse': {
             "pkg": "procps",
