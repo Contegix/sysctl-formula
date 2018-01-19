@@ -37,7 +37,6 @@
 {% do os_family_map.update( { "pkg": "procps",  "config": { "location": '/etc/sysctl.conf', }, })  %}
 {% endif %}
 
-
 {## Merge the flavor_map to the default settings ##}
 {% do default_settings.sysctl.update(os_family_map) %}
 
